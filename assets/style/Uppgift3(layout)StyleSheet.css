@@ -1,0 +1,66 @@
+/*Elev: Takeyoshi Murase*/
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	border: 1px solid gray;
+	background-color: teal;
+}
+
+header {
+	padding: 30px;
+	font-family: sans-serif;
+	background-color: lightblue;
+}
+
+aside {
+	float: left;
+	background-color: pink;
+	width: 200px;
+	height: 1000px
+	border-style: solid; 
+	margin-top: 40px;
+}
+
+#js {
+	width: 100px;
+	margin-left: 100px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+main {
+	margin-top: 40px;
+	margin-left: 20px;
+	background-color: olive;
+	overflow: hidden;
+}
+
+h3 {
+	text-align: center;
+}
+
+pre {
+	white-space: pre-wrap;
+	margin-left: 20px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	text-align: center;
+}
+
+footer {
+	margin-top: 40px;
+	clear: left;
+	padding: 20px;
+	background-color: lightgrey;
+}
