@@ -1,0 +1,233 @@
+/*Elev: Takeyoshi Murase*/
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	margin: 0;
+}
+
+/*//settings for the title animation\\*/
+
+h1 {
+	animation-name: blackNWhite;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes blackNWhite {
+	from{color: black; font-size: 1em;}
+	to{color: white; font-size: 3em;}
+}
+
+/*-----------------------------*/
+
+/*//settings for all the odd and even div elements\\*/
+
+.odd, .even {
+	position: relative;
+	width: 100%;
+	height: 100px;
+}
+
+.odd {
+	background-color: seagreen;
+}
+
+.even {
+	background-color: skyblue;
+}
+
+/*-----------------------------*/
+
+/*//settings for the heart\\*/
+
+.heart {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	margin: 5px;
+	animation-name: beat;
+	animation-iteration-count: 3;
+	animation-duration: 1s;
+	animation-direction: alternate;
+}
+
+@keyframes beat {
+	from{transform: scale(1);}
+	to{transform: scale(0.8);}
+}
+
+/*-----------------------------*/
+
+/*//settings for the flower\\*/
+
+.flower {
+	position: absolute;
+	width: 70px;
+	margin-left: 100px;
+	transform: scale(0.2);
+	animation-name: grow;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+	from{transform: scale(0.2);}
+	to{transform: scale(1);}
+}
+
+/*-----------------------------*/
+
+/*//settings for the car\\*/
+
+.car {
+	position: absolute;
+	width: 100px;
+	margin-top: 55px;
+	animation-name: drive;
+	animation-iteration-count: 1;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes drive {
+	from {transform: translateX(0);}
+	to {transform: translateX(500px);}
+}
+
+/*-----------------------------*/
+
+/*//settings for the spinner\\*/
+
+.spinner {
+	position: absolute;
+	width: 100px;
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+}
+
+@keyframes spin {
+	from {transform: rotateZ(0deg);}
+	to {transform: rotateZ(360deg);}
+}
+
+/*-----------------------------*/
+
+/*//settings for the square\\*/
+
+.square {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: purple;
+	margin: 5px;
+	border-style: solid;
+	animation-name: move;
+	animation-duration: 4s;
+	animation-iteration-count: 5;
+	
+}
+
+@keyframes move {
+	0%{background-color: purple; left: 0px; top: 0px; border-color: black}
+	25%{background-color: red; left: 400px; top: 0px; border-color: green}
+	50%{background-color: yellow; left: 400px;top: 50px; border-color: white}
+	75%{background-color: orange; left: 0px; top: 50px; border-color: green}
+	100%{background-color: red; left: 0px; top: 0px; border-color: white}
+}
+
+/*-----------------------------*/
+
+/*//settings for the wheel\\*/
+
+.wheel {
+	position: absolute;
+	width: 80px;
+	margin-top: 20px;
+	animation-name: rollingWheel;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes rollingWheel {
+	from{transform: rotateZ(0deg); left: 0px;}
+	to{transform: rotateZ(360deg); left: 300px;}
+}
+
+/*-----------------------------*/
+
+/*//settings for the hoverMe\\*/
+
+.hoverMe {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: yellow;
+}
+
+.hoverMe:hover {
+	position: absolute;
+	width: 200px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: yellow;
+	transition: 2s;
+}
+
+/*-----------------------------*/
+
+/*//settings for the bounce\\*/
+
+.bouncing {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	padding: 0px;
+	animation-name: bounce;
+	animation-duration: 2.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+}
+
+@keyframes bounce {
+	0%{transform: translate(0px, 0px); padding: 0px;}
+	20%{transform: translate(100px, 100px); padding: 10px;}
+	40%{transform: translate(200px, 0px); padding: 0px;}
+	60%{transform: translate(300px, 100px); padding: 10px;}
+	80%{transform: translate(400px, 0px); padding: 0px;}
+	100%{transform: translate(500px, 100px); padding: 10px;}
+}
+
+/*-----------------------------*/
+
+/*//settings for the pushMe\\*/
+
+.pushMe {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: pink;
+}
+
+.pushMe:hover {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 200px;
+	transition: 2s;
+}
+
+/*-----------------------------*/
