@@ -1,0 +1,25 @@
+/*Elev: Takeyoshi Murase*/
+body,html {
+	margin: 0px;
+	background-color: #bfff00;
+}
+.SocialSecurityNumber {
+	width: 100%;
+	height: 300px;
+	background-color: lightblue;
+	margin-top: 0px;
+}
+
+.leapYear {
+	width: 100%;
+	height: 300px;
+	background-color: lightblue;
+	margin-top: 0px;
+}
+
+.sum {
+	width: 100%;
+	height: 300px;
+	background-color: lightblue;
+	margin-top: 0px;
+}
