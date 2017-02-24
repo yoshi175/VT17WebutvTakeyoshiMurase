@@ -1,11 +1,45 @@
+<!--Elev: Takeyoshi Murase-->
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Uppgift 5</title>
-</head>
-<body>
-	<h1>Uppgift 5 under arbete</h1>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style/Uppgift5(validering)StyleSheet.css">
+		<title>Validering</title>
+	</head>
+	<body>
+		<header>
+			<h1>Valideringar</h1>	
+		</header>
+		<div class="SocialSecurityNumber">
+			<h2>Personnummer</h2>
+			<p>Skriv in ett personnummer för att kontrollera att om det är giltigt. (yyyymmddxxxx/yymmddxxxx)</p>
+			<input id="SocialSecurityNumberInput" type="number" name="nummer" placeholder="Personnummer">
+			<button onclick="validSocialSecurityNumber()">Kontrollera</button>
+			<p id="validOrNotResult"></p>
+		</div>
+		<hr>
+		
+		<div class="leapYear">
+			<h2>Skottår</h2>
+			<p>Skriv in ett årtal för att kontrollera om det är ett skottår.</p>
+			<input id="leapYearInput" type="number" name="" placeholder="Årtal">
+			<button onclick="leapYear()">Kontrollera</button>
+			<p id="leapYearOrNotResult"></p>
+		</div>
+		<hr>
+
+		<div class="sum">
+			<h2>Siffersumma</h2>
+			<p>Skriv in ett tal för att summera alla enskilda siffror.</p>
+			<input id="figureInput" type="number" name="" placeholder="Tal">
+			<button onclick="digitSum()">Beräkna</button>
+			<p id="digitSumResult"></p>
+		</div>
+		<div></div>
+
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<script src="C:\Users\Takeyoshi\Desktop\VT17WebutvTakeyoshiMurase\assets\script\Uppgift5(validering)Javascript.js" type="text/javascript"></script>
+		
+	</body>
 </html>
