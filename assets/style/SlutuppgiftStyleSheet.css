@@ -1,0 +1,42 @@
+body, html {
+	background-image:url("../resource/weather/weather/weather.png");
+	margin: 0px;
+	margin-top: -25px;
+}
+h1 {
+	font-size: 4em;
+	width: 100%;
+	text-align: center;
+	
+	padding: 50px;
+}
+
+img {
+	width: 600px;
+	height: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	text-align: center;
+}
+
+h2 {
+	width: 100%;
+	text-align: center;
+}
+
+
+.fact {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	
+}
+q {
+	white-space: pre-wrap;
+	font-family: serif;
+}
