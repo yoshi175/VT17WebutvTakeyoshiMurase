@@ -5,9 +5,6 @@ h1 {
 	
 }
 
-#ingredients {
-}
-
 aside {
 	display: inline-block;
 	padding-bottom: 150px;
@@ -18,8 +15,8 @@ section#description {
 	position: absolute;
 	display: inline-block;
 	font-family: serif;
-	/*white-space: pre-wrap;*/
 }
+
 /*
 section#grade {
 	background-color: ;
@@ -42,9 +39,6 @@ section#grade {
 	background-color: yellow;
 }
 */
-
-
-
 
 .rate {
   /*border: 1px solid #cccccc;*/
