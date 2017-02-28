@@ -2,13 +2,75 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Examination">
-	<meta name="keywords" content="Examination, Slutuppgift, webutveckling, website">
-	<meta name="author" content="Takeyoshi Murase">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Slutuppgift</title>
+	<link rel="stylesheet" type="text/css" href="../style/Slutuppgift(recept)StyleSheet.css">
+	<title>Recept på kladdkaka</title>
+	<style>
+		body {
+			background-image:url("../resource/weather/weather/weather.png");
+		}
+	</style>
 </head>
 <body>
-	<h1>Slutuppgift under arbete</h1>
+	<header>
+		<h1>Recept på kladdkaka &starf;</h1>
+		<a href="https://www.kokaihop.se/recept/klassisk-kladdkaka-2">link</a>
+	</header>
+	<aside>
+
+		<h2 id="ingredients">Ingredienser:</h2>
+		<label>Antal satser: <input onclick="recipe()" id="batch" type="number" name="portion" value="1" min="1" max="10" step="1"></label>
+		<ul>
+			<li id="butter">150 gram smör eller margarin</li>
+			<li id="suger">3 dl socker</li>
+			<li id="cacao">1 dl kakao</li>
+			<li id="vanillaSugar">1 tsk vaniljsocker</li>
+			<li id="egg">2 st ägg</li>
+			<li id="flour">2 dl vetemjöl</li>
+		</ul>
+	</aside>
+	
+	<section id="description">
+		<h3>Gör så här:</h3>
+		<ol>
+			<li>Sätt ugnen på 175 grader.<br><br></li>
+			<li>Smält matfettet i en kastrull som rymmer ca 2 liter. Ta kastrullen från värmen.<br><br></li>
+			<li>Rör ner socker, kakao och vaniljsocker i det smälta matfettet. Tillsätt äggen, ett i taget, under omrörning. Rör till sist ner vetemjöl.<br><br></li>
+			<li>Bred ut smeten i en smord och bröad form med löstagbar kant, ca 24 cm i diameter. Grädda kakan i nedre delen av ugnen 20 minuter, inte längre, kakan ska vara lös i mitten.<br><br></li>
+			<li>Låt kakan kallna och ställ den sedan i kylen ca 1 timme. Sikta eventuellt över lite florsocker strax innan kakan ska serveras.<br><br></li>
+		</ol>
+		<img src="https://res.cloudinary.com/hufennija/image/upload/f_auto,q_50,fl_progressive,w_790,h_460,c_fill/1540843.jpg" alt="pic of a sticky brownie">
+		<!--
+		<section id="grade">
+		<h4>Betyg</h4>
+		<div class="rate" id="one"></div>
+		<div class="rate" id="two"></div>
+		<div class="rate" id="three"></div>
+		<div class="rate" id="four"></div>
+		<div class="rate" id="five"></div>
+		</section>
+		-->
+		<div class="stars">
+			<h4>Betyg</h4>
+			<p id="ratingMeanValue">-/5</p>
+		  	<div class="rate">
+				<input onclick="ratingMeanValue()" type="radio" id="star5" name="rate" value="5" />
+				<label for="star5" title="text">5 stars</label>
+				<input onclick="ratingMeanValue()" type="radio" id="star4" name="rate" value="4" />
+				<label for="star4" title="text">4 stars</label>
+				<input onclick="ratingMeanValue()" type="radio" id="star3" name="rate" value="3" />
+				<label for="star3" title="text">3 stars</label>
+				<input onclick="ratingMeanValue()" type="radio" id="star2" name="rate" value="2" />
+				<label for="star2" title="text">2 stars</label>
+				<input onclick="ratingMeanValue()" type="radio" id="star1" name="rate" value="1" />
+				<label for="star1" title="text">1 star</label>
+			</div>
+		</div>
+	</section>
+
+	
+
+	
+	<script type="text/javascript" src="../script/SlutuppgiftJavascript.js"></script>
 </body>
 </html>
