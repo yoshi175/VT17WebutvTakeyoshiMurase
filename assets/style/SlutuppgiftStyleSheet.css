@@ -3,6 +3,7 @@ body, html {
 	margin: 0px;
 	margin-top: -25px;
 }
+
 h1 {
 	font-size: 4em;
 	width: 100%;
@@ -28,7 +29,6 @@ h2 {
 	text-align: center;
 }
 
-
 .fact {
 	display: block;
 	margin-left: auto;
@@ -36,6 +36,7 @@ h2 {
 	width: 50%;
 	
 }
+
 q {
 	white-space: pre-wrap;
 	font-family: serif;
