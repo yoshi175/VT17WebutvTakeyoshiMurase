@@ -16,8 +16,8 @@ function updateRate(){
 			document.getElementById('ratingMeanValue').innerHTML = jsonList.rating + "/5 av " + jsonList.votes + " röster";
 		}
 	}
-	xhttp.open("GET", "https://edu.oscarb.se/sjk15/api/recipe/?api_key=122d97072c38e22e&recipe=kladdkaka",true);
-	xhttp.send();
+	xmlhttp.open("GET", "https://edu.oscarb.se/sjk15/api/recipe/?api_key=122d97072c38e22e&recipe=kladdkaka",true);
+	xmlhttp.send();
 }
 
 function rateOne() {
