@@ -1,0 +1,81 @@
+body {
+	background-image:url("../resource/weather/weather/weather.png");
+}
+h1 {
+	
+}
+
+#ingredients {
+}
+
+aside {
+	display: inline-block;
+	padding-bottom: 150px;
+	width: 240px;
+}
+
+section#description {
+	position: absolute;
+	display: inline-block;
+	font-family: serif;
+	/*white-space: pre-wrap;*/
+}
+/*
+section#grade {
+	background-color: ;
+}
+
+.rate {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: orange;
+}
+
+.rate:hover {
+	background-color: yellow;
+	width: 50px;
+	height: 50px;
+}
+
+#one:onclick {
+	background-color: yellow;
+}
+*/
+
+
+
+
+.rate {
+  /*border: 1px solid #cccccc;*/
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+
+.rate:not(:checked) > label:before {
+	content: '★ ';
+}
+
+.rate > input:checked ~ label {
+	color: #ffc700;
+}
+
+.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label { color: #deb217; }
+
+.rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label { color: #c59b08; }
