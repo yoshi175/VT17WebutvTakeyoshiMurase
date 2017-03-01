@@ -1,6 +1,9 @@
-body {
-	background-image:url("https://c1.staticflickr.com/5/4049/4562026127_853940bc8b_o.png");
+body, html {
+	background-image:url("https://www.toptal.com/designers/subtlepatterns/patterns/restaurant.png");
+	margin: 0px;
+	margin-top: -25px;
 }
+
 h1 {
 	
 }
